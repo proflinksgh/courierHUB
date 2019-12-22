@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign"
+    android:layout_width="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:layout_height="match_parent"
+    tools:context="com.example.Erranda.Sign"
+    android:background="#035185"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="80dp">
+
+
+
+        <TextView
+            android:id="@+id/tvTit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="40dp"
+            android:text="Momo Payment"
+            android:textColor="#FFD600"
+            android:textSize="20dp"
+
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input"
+            android:layout_width="match_parent"
+            android:textColorHint="#A59191"
+            android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/etContact"
+            style="@style/SetupEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:hint=" Enter Mobile Number"
+            android:textColor="#FDFCFC"
+            android:textColorHint="#CAB7B7"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            android:inputType="phone"
+            />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/etAmount"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Amount (GH¢25.00)"
+            android:textColor="#FDFCFC"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+
+            />
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="180dp"
+                android:layout_height="35dp"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:text="Submit"
+                android:background="#DD2C00"
+                android:textColor="#FAFAFC" />
+
+            <View
+                android:layout_width="10dip"
+                android:layout_height="match_parent"
+                android:background="#035185"
+                android:layout_centerHorizontal="true"/>
+
+
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="bottom"
+                android:background="#FCFDFD"
+                android:text="cancel"
+                android:textColor="#070707"
+                android:textSize="14dp"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

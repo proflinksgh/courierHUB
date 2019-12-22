@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign"
+    android:layout_width="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+
+    android:layout_height="match_parent"
+    tools:context="com.example.Erranda.Sign"
+
+    >
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+
+        <TextView
+            android:id="@+id/tvcurrentlocation"
+            android:layout_height="40dp"
+            style="@style/TextViewColumn"
+            android:background="#035185"
+            android:text="My Current Location:"
+            android:layout_width="match_parent"
+            android:textColor="#FAF8F8"
+            android:gravity="center"
+            android:textSize="14dp" />
+
+
+
+        <TextView
+            android:id="@+id/tvJSON"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="(Where do you want us to Collect your Item?)"
+            android:textColor="#3D3C3A"
+            android:textSize="13sp"
+            />
+
+
+        <Button
+            android:id="@+id/btnMap"
+            android:layout_width="40dp"
+            android:layout_gravity="center"
+            android:layout_height="40dp"
+            android:background="@drawable/pplaceholder"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+
+        <EditText
+
+            android:id="@+id/etCity"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            style="@style/SetupEditTextStyleBlack"
+            android:hint="City(Example: Accra)"
+            android:inputType="textAutoComplete"
+            android:text="Accra"
+            android:textColor="#050505"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            tools:targetApi="o" />
+
+
+        <!--  <com.google.android.material.textfield.TextInputLayout
+               android:id="@+id/text_input"
+               android:layout_width="match_parent"
+               android:textColorHint="#A59191"
+               android:layout_height="wrap_content"> -->
+
+        <EditText
+            android:id="@+id/etResidence"
+            android:layout_width="300dp"
+            android:textColorHint="#A59191"
+            android:layout_height="30dp"
+            style="@style/SetupEditTextStyleBlack"
+            android:layout_gravity="center"
+            android:textColor="#030303"
+            android:hint="  Residence(Example: Achimota Shopprite)"
+            android:textSize="14sp"
+            android:inputType="textAutoComplete"
+            android:textAlignment="center"
+            tools:targetApi="o" />
+
+        <!--    </com.google.android.material.textfield.TextInputLayout>   -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:paddingTop="0dp">
+
+
+            <EditText
+                android:id="@+id/etContact"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textColorHint="#A59191"
+                android:textAlignment="center"
+                style="@style/SetupEditTextStyleBlack"
+                android:layout_marginLeft="15dp"
+                android:hint="  Contact"
+                android:inputType="phone"
+                android:outlineSpotShadowColor="@color/colorAccent"
+                android:textColor="#050505"
+                android:textSize="14sp"
+                tools:targetApi="o" />
+
+
+
+            <EditText
+                android:id="@+id/etDigital"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textColorHint="#A59191"
+                style="@style/SetupEditTextStyleBlack"
+                android:layout_marginLeft="15dp"
+                android:hint="Digital Address(Opt)"
+                android:textAlignment="center"
+                android:inputType="textAutoComplete"
+                android:outlineSpotShadowColor="@color/colorAccent"
+                android:textColor="#030000"
+                android:textSize="14sp"
+                tools:targetApi="o" />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/tvJSN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="(Where do you want us to send your Item?)"
+            android:textSize="13sp"
+            android:layout_marginTop="60dp"
+            android:textColor="#3D3C3A"
+            />
+
+
+        <Button
+            android:id="@+id/btnMapp"
+            android:layout_width="40dp"
+            android:layout_gravity="center"
+            android:layout_height="40dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/pplaceholder"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+
+        <EditText
+
+            android:id="@+id/etDcity"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            style="@style/SetupEditTextStyleBlack"
+            android:textColor="#070707"
+            android:hint="City(Example: Accra)"
+            android:inputType="textAutoComplete"
+            android:text="Accra"
+            android:textAlignment="center"
+            android:textColorHint="#7A7878"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            tools:targetApi="o" />
+
+
+
+        <!--     <com.google.android.material.textfield.TextInputLayout
+                 android:id="@+id/texttt"
+                 android:layout_width="match_parent"
+                 android:textColorHint="#A59191"
+                 android:layout_height="wrap_content">   -->
+
+        <EditText
+            android:id="@+id/etDresidence"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            style="@style/SetupEditTextStyleBlack"
+            android:textColorHint="#A59191"
+            android:layout_gravity="center"
+            android:textColor="#020101"
+            android:hint="  Residence(Example: FCBC Madina)"
+            android:textSize="14sp"
+            android:inputType="textAutoComplete"
+            android:textAlignment="center"
+            tools:targetApi="o" />
+        <!--     </com.google.android.material.textfield.TextInputLayout> -->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textt1"
+            android:layout_width="match_parent"
+            android:textColorHint="#A59191"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:paddingTop="0dp">
+
+                <EditText
+                    android:id="@+id/etContact1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textColorHint="#A59191"
+                    android:textAlignment="center"
+                    style="@style/SetupEditTextStyleBlack"
+                    android:layout_marginLeft="15dp"
+                    android:hint="Contact"
+                    android:inputType="phone"
+                    android:outlineSpotShadowColor="@color/colorAccent"
+                    android:textColor="#050505"
+                    android:textSize="14sp"
+                    tools:targetApi="o" />
+
+
+                <EditText
+                    android:id="@+id/etDigital1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textColorHint="#A59191"
+                    android:textAlignment="center"
+                    style="@style/SetupEditTextStyleBlack"
+                    android:layout_marginLeft="15dp"
+                    android:hint="Digital Address(Opt)"
+                    android:inputType="textAutoComplete"
+                    android:outlineSpotShadowColor="@color/colorAccent"
+                    android:textColor="#070505"
+                    android:textSize="14sp"
+                    tools:targetApi="o" />
+
+            </LinearLayout>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnGetDetatils"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonblueborder"
+            android:text="NEXT"
+            android:textColor="#FCFBFB"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+</ScrollView>

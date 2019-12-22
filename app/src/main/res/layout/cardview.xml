@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="25dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginBottom="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:outlineSpotShadowColor="#035185"
+        app:cardCornerRadius="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:id="@+id/headdate"
+            android:layout_below="@+id/track"
+            android:orientation="horizontal"
+            android:minHeight="30dp"
+            android:layout_width="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/titledate"
+                android:text="Date"
+                android:layout_marginLeft="30dp"
+                android:gravity="left"
+                android:textStyle="italic"
+                android:textColor="#413D3D"
+                style="@style/TextViewColumn"
+                android:layout_gravity="center"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/date"
+                style="@style/TextViewColumn"
+                android:gravity="left"
+                android:layout_gravity="center"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/headcourier"
+            android:orientation="horizontal"
+            android:layout_width="300dp"
+            android:layout_centerHorizontal="true"
+            android:minHeight="30dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title_courier"
+                style="@style/TextViewColumn"
+                android:text="Partner"
+                android:textStyle="italic"
+                android:textColor="#413D3D"
+                android:layout_marginLeft="30dp"
+                android:gravity="left"
+                android:layout_gravity="center"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvpartner"
+                style="@style/TextViewColumn"
+                android:gravity="left"
+                android:layout_gravity="center"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/headtoken"
+            android:orientation="horizontal"
+            android:layout_below="@+id/headremarks"
+            android:layout_width="300dp"
+            android:layout_centerHorizontal="true"
+            android:minHeight="30dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title_token"
+                style="@style/TextViewColumn"
+                android:text="Token"
+                android:textStyle="italic"
+                android:textColor="#413D3D"
+                android:layout_marginLeft="30dp"
+                android:gravity="left"
+                android:layout_gravity="center"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/token"
+                style="@style/TextViewColumn"
+                android:gravity="left"
+                android:layout_gravity="center"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/headitem"
+        android:orientation="horizontal"
+        android:layout_below="@+id/headid"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:minHeight="30dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title_item"
+            style="@style/TextViewColumn"
+            android:text="Item"
+            android:textStyle="italic"
+            android:textColor="#413D3D"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:gravity="left"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/item"
+            style="@style/TextViewColumn"
+            android:gravity="left"
+            android:layout_gravity="center"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/headcost"
+        android:orientation="horizontal"
+        android:minHeight="30dp"
+        android:layout_below="@+id/headquantity"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/titlecost"
+            android:text="Cost"
+            style="@style/TextViewColumn"
+            android:textStyle="italic"
+            android:textColor="#413D3D"
+            android:layout_marginLeft="30dp"
+            android:gravity="left"
+            android:layout_gravity="center"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/cost"
+            style="@style/TextViewColumn"
+            android:gravity="left"
+            android:layout_gravity="center"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/headremarks"
+        android:orientation="horizontal"
+        android:layout_below="@+id/headcost"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:minHeight="30dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title_remarks"
+            style="@style/TextViewColumn"
+            android:text="Payment"
+            android:textStyle="italic"
+            android:textColor="#413D3D"
+            android:layout_marginLeft="30dp"
+            android:gravity="left"
+            android:layout_gravity="center"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/remarks"
+            style="@style/TextViewColumn"
+            android:gravity="left"
+            android:layout_gravity="center"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/headpicklocation"
+        android:orientation="horizontal"
+        android:layout_below="@+id/headremarks"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:minHeight="30dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title_picklocation"
+            style="@style/TextViewColumn"
+            android:text="Pick Location"
+            android:textStyle="italic"
+            android:textColor="#413D3D"
+            android:layout_marginLeft="30dp"
+            android:gravity="left"
+            android:layout_gravity="center"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/picklocation"
+            style="@style/TextViewColumn"
+            android:gravity="left"
+            android:layout_gravity="center"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/headdispatchlocation"
+            android:orientation="horizontal"
+            android:layout_below="@+id/headpicklocation"
+            android:layout_width="300dp"
+            android:layout_centerHorizontal="true"
+            android:minHeight="30dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title_dispatchlocation"
+                style="@style/TextViewColumn"
+                android:text="Dispatch Location"
+                android:textStyle="italic"
+                android:textColor="#413D3D"
+                android:layout_marginLeft="30dp"
+                android:gravity="left"
+                android:layout_gravity="center"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/dispatchlocation"
+                style="@style/TextViewColumn"
+                android:gravity="left"
+                android:layout_gravity="center"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/headserial"
+            android:orientation="horizontal"
+            android:layout_width="300dp"
+            android:layout_centerHorizontal="true"
+            android:minHeight="30dp"
+            android:layout_height="wrap_content">
+
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:background="@drawable/serailno"
+
+               />
+
+             
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/headserialno"
+            android:orientation="horizontal"
+            android:layout_width="300dp"
+            android:layout_centerHorizontal="true"
+            android:minHeight="30dp"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/tvserial"
+                style="@style/TextViewColumn"
+                android:text="Serial no."
+                android:textColor="#030303"
+                android:gravity="center"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+        
+        
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

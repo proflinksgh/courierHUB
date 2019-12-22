@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1010471338401",
+    "firebase_url": "https://third-diorama-237816.firebaseio.com",
+    "project_id": "third-diorama-237816",
+    "storage_bucket": "third-diorama-237816.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1010471338401:android:c4119f6b5bb3cd3f",
+        "android_client_info": {
+          "package_name": "com.example.myapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1010471338401-uk8h99bcmdrqmr64bou6ub1pvgalliun.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.examples.myapp",
+            "certificate_hash": "5cfb80bab96dc731f0ca9c3562fc9cb143726a71"
+          }
+        },
+        {
+          "client_id": "1010471338401-9f238rg2kcaivdr09tumokcd6rktiaku.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBD7m4wppSK4yRQWENswHTROcj4eaOGdmc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1010471338401-9f238rg2kcaivdr09tumokcd6rktiaku.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

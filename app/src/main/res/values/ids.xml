@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btnStart" type="id" />
+    <item name="login" type="id" />
+    <item name="create_account" type="id" />
+    <item name="usr" type="id" />
+    <item name="pas" type="id" />
+    <item name="loginLockedTV" type="id" />
+    <item name="numberOfRemainingLoginAttemptsTV" type="id" />
+    <item name="toolbar" type="id" />
+    <item name="frament_container" type="id" />
+    <item name="fragment_container" type="id" />
+    <item name="recylcerView" type="id" />
+    <item name="dialogButtonOK" type="id" />
+</resources>

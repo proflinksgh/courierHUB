@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign"
+    android:layout_width="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:layout_height="match_parent"
+    tools:context="com.example.Erranda.Sign"
+>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="15dp">
+
+
+        <TextView
+            android:id="@+id/tvTitt"
+            android:text = "Cost of Delivery"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#3D3C3A" />
+
+        <TextView
+            android:id="@+id/tvAmt"
+            android:layout_width="wrap_content"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="#2962FF" />
+
+        <LinearLayout
+            android:id="@+id/btnacceptdecline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:paddingTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+
+            >
+
+
+
+            <Button
+                android:id="@+id/btnConfirm"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:text="Accept"
+                android:textAllCaps="false"
+                android:background="@drawable/buttonblueborder"
+                android:textColor="#FDFDFF" />
+
+
+
+            <Button
+                android:id="@+id/btnDecline"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                style="@style/SetupEditTextStyleBlack1"
+                android:text="Decline"
+                android:textColor="#070707"
+                android:textSize="14dp"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/payoption"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginTop="130dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tvsel"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="Select Payment Option"
+            android:textAlignment="center"
+            android:background="#9C978D"
+            android:textColor="#090000"
+            android:textSize="17sp" />
+
+        <RadioGroup
+            android:id="@+id/radiopayoption"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content" >
+
+
+            <RadioButton
+                android:id="@+id/radiocash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cash"
+                android:textColor="#1A1818"
+                android:textSize="18dp"
+                android:checked="false" />
+
+
+            <RadioButton
+                android:id="@+id/radioairteltigo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AirtelTigo Cash"
+                android:textColor="#1A1818"
+                android:textSize="18dp" />
+
+            <RadioButton
+                android:id="@+id/radiomtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mtn Mobile Money"
+                android:textColor="#1A1818"
+                android:textSize="18dp"
+                android:checked="false" />
+
+            <RadioButton
+                android:id="@+id/radiovoda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#1A1818"
+                android:textSize="18dp"
+                android:text="Vodafone Cash" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="330dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+
+                android:id="@+id/amount"
+                android:layout_width="180dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+
+
+                <!-- Insertion Starts here -->
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/text_input"
+                    android:layout_width="match_parent"
+                    android:textColorHint="#FFD600"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content">
+
+
+                    <EditText
+                        android:visibility="gone"
+                        android:id="@+id/etContact"
+                        style="@style/SetupEditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_centerHorizontal="true"
+                        android:textAlignment="center"
+                        android:textColor="#050404"
+                        android:textAllCaps="false"
+                        android:inputType="phone"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/btnsubmit"
+                android:layout_width="250dp"
+                android:layout_height="35dp"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:background="@drawable/buttonblueborder"
+                android:textColor="#000005" />
+
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.Erranda.Sign">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#035185"
+        >
+
+        <TextView
+
+            android:text = "Login to Begin"
+            android:layout_width="wrap_content"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"/>
+
+
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="110dp">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:textColorHint="#575555"
+                app:errorEnabled="true"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/etUsername"
+                    android:layout_width="300dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="0dp"
+                    style="@style/SetupEditTextStyleBlack"
+                    android:textColor="#020000"
+                    android:autofillHints="text"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    app:errorEnabled="true"
+                    app:counterEnabled="true"
+                    android:textColorHint="#64DD17"
+                    tools:targetApi="o" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:textColorHint="#575555"
+                app:errorEnabled="true"
+                app:passwordToggleEnabled="true"
+                android:layout_height="wrap_content">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPassword1"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    style="@style/SetupEditTextStyleBlack"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColor="#050404"
+                    android:textColorHint="#F9FAF9"
+                    app:errorEnabled="true"
+                    tools:targetApi="o" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="200dp"
+                android:layout_gravity="center"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/buttonblueborder"
+                android:text="@string/login"
+                android:textColor="#FAF9F9" />
+
+            <TextView
+                android:id="@+id/tvalready"
+                android:text="                            Don't have an account?"
+                android:layout_width="wrap_content"
+                android:textSize="15dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#575555"/>
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:background="#050F2292"
+                android:text="                     REGISTER"
+                android:textColor="#035185"
+                android:textSize="20dp"
+                android:typeface="sans" />
+
+
+            <TextView
+                android:id="@+id/release"
+                android:text="Beta-release"
+                android:layout_width="wrap_content"
+                android:textSize="15dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="150dp"
+                android:textColor="#035185" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

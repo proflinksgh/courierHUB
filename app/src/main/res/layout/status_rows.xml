@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+>
+
+    <Button
+        android:id="@+id/track"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/buttonstyleclicked"
+        android:text="Track"
+        android:textAllCaps="false"
+        android:textColor="#FAFAFC"
+        android:layout_centerHorizontal="true"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/headid"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_blue_border"
+        android:layout_below="@+id/headdate"
+        android:minHeight="30dp"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/titleid"
+            style="@style/TextViewColumn"
+            android:textStyle="italic"
+            android:text="Request Id"
+            android:textColor="#413D3D"
+            android:layout_marginLeft="30dp"
+            android:gravity="left"
+            android:layout_gravity="center"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/id"
+            style="@style/TextViewColumn"
+            android:gravity="left"
+            android:layout_gravity="center"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+
+        android:id="@+id/headdate"
+        android:layout_below="@+id/track"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_blue_border"
+        android:minHeight="30dp"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/titledate"
+            android:text="Date"
+            android:layout_marginLeft="30dp"
+            android:gravity="left"
+            android:textStyle="italic"
+            android:textColor="#413D3D"
+            style="@style/TextViewColumn"
+            android:layout_gravity="center"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/date"
+            style="@style/TextViewColumn"
+            android:gravity="left"
+            android:layout_gravity="center"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/headitem"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_blue_border"
+        android:layout_below="@+id/headid"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:minHeight="30dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title_item"
+            style="@style/TextViewColumn"
+            android:text="Item"
+            android:textStyle="italic"
+            android:textColor="#413D3D"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:gravity="left"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/item"
+            style="@style/TextViewColumn"
+            android:gravity="left"
+            android:layout_gravity="center"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/headquantity"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_blue_border"
+        android:layout_below="@+id/headitem"
+        android:minHeight="30dp"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/titlequantity"
+            style="@style/TextViewColumn"
+            android:text="Quantity"
+            android:textColor="#413D3D"
+            android:textStyle="italic"
+            android:layout_marginLeft="30dp"
+            android:gravity="left"
+            android:layout_gravity="center"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/quantity"
+            style="@style/TextViewColumn"
+            android:gravity="left"
+            android:layout_gravity="center"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/headcost"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_blue_border"
+        android:minHeight="30dp"
+        android:layout_below="@+id/headquantity"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/titlecost"
+            android:text="Cost"
+            style="@style/TextViewColumn"
+            android:textStyle="italic"
+            android:textColor="#413D3D"
+            android:layout_marginLeft="30dp"
+            android:gravity="left"
+            android:layout_gravity="center"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/cost"
+            style="@style/TextViewColumn"
+            android:gravity="left"
+            android:layout_gravity="center"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/headremarks"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_blue_border"
+        android:layout_below="@+id/headcost"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:minHeight="30dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title_remarks"
+            style="@style/TextViewColumn"
+            android:text="Remarks"
+            android:textStyle="italic"
+            android:textColor="#413D3D"
+            android:layout_marginLeft="30dp"
+            android:gravity="left"
+            android:layout_gravity="center"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/remarks"
+            style="@style/TextViewColumn"
+            android:gravity="left"
+            android:layout_gravity="center"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/headtoken"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_blue_border"
+        android:layout_below="@+id/headremarks"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:minHeight="30dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title_token"
+            style="@style/TextViewColumn"
+            android:text="Token"
+            android:textStyle="italic"
+            android:textColor="#413D3D"
+            android:layout_marginLeft="30dp"
+            android:gravity="left"
+            android:layout_gravity="center"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/token"
+            style="@style/TextViewColumn"
+            android:gravity="left"
+            android:layout_gravity="center"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/headstatus"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_blue_border"
+        android:layout_below="@+id/headtoken"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:minHeight="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title_status"
+            style="@style/TextViewColumn"
+            android:text="Status"
+            android:textStyle="italic"
+            android:textColor="#413D3D"
+            android:layout_marginLeft="30dp"
+            android:gravity="left"
+            android:layout_gravity="center"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/status"
+            style="@style/TextViewColumn"
+            android:gravity="left"
+            android:textColor="#FAF9F9"
+            android:textStyle="bold"
+            android:background="#035185"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

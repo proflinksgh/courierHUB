@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.Erranda.MainActivity">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/img"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/imgprofile"
+            android:layout_width="117dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="117dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/profile"
+
+            />
+
+
+
+        <TextView
+            android:id="@+id/tvprofilename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Papilo"
+            android:textSize="20dp"
+            android:outlineSpotShadowColor="#FAF9F9"
+            android:textColor="#FFD600"
+            android:textStyle="bold"
+            android:layout_below="@+id/imgprofile"
+            android:layout_centerInParent="true"
+
+            />
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@+id/tvprofilename"
+                android:layout_alignBaseline="@+id/tvprofilename"
+                android:id="@+id/btnedit"
+                android:background="@drawable/ic_edit"
+                />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnprofilephoto"
+                android:background="@android:color/transparent"
+                />
+
+
+
+</RelativeLayout>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_container"
+        >
+
+    </FrameLayout>
+
+
+</LinearLayout>
+
+
+
+
+

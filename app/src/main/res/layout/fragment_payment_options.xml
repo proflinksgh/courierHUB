@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign"
+    android:layout_width="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="#035185"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:layout_height="match_parent"
+    tools:context="com.example.Erranda.Sign"
+
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="100dp">
+
+
+        <TextView
+            android:id="@+id/tvPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginBottom="10dp"
+            android:text="Select Payment Option"
+            android:textColor="#FFD600"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnMomo"
+            android:layout_width="80dp"
+            android:layout_gravity="center"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:text="Mtn Momo"
+            android:textSize="20sp"
+            android:background="@drawable/styleforblack"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/btnCash"
+            android:layout_width="80dp"
+            android:layout_gravity="center"
+            android:layout_height="70dp"
+            android:layout_marginTop="30dp"
+            android:text="Cash"
+            android:textSize="20sp"
+            android:background="@drawable/styleforblack"
+            android:textColor="#fff" />
+
+
+    </LinearLayout>
+</RelativeLayout>
+

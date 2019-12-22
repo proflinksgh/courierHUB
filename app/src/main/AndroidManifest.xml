@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.Erranda">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACTION_MANAGE_OVERLAY_PERMISSION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+
+
+
+    <application
+        tools:replace="android:label"
+        android:icon="@drawable/hub"
+        android:name="androidx.multidex.MultiDexApplication"
+        android:label="CourierHub"
+        android:screenOrientation="sensorPortrait"
+        android:windowSoftInputMode="stateHidden|adjustPan"
+        android:roundIcon="@mipmap/err"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name="com.example.Erranda.MapActivity"
+            android:label="@string/title_activity_map">
+
+        </activity>
+        <activity android:name="com.example.Erranda.ResetAcc" />
+        <activity android:name="com.example.Erranda.ResetAcc2" />
+        <activity android:name="com.example.Erranda.Register" />
+        <!--<activity android:name="com.example.Erranda.Welcome_Fragmentent" />-->
+        <activity android:name="com.example.Erranda.Login" />
+        <activity android:name="com.example.Erranda.Webview" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBUby__A1vo8gVLJj4MMjFod7Wfe3k2XN0" />
+        <!--
+ Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+
+        <activity android:name="com.example.Erranda.GooglePlaceAutoComplete" />
+
+        <activity android:name="com.example.Erranda.PermissionsActivity"/>
+        <activity
+            android:name="com.example.Erranda.Welcome_Fragment"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+            <intent-filter>
+
+                <action
+
+                    android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.Erranda.MainActivity"
+            android:parentActivityName="com.example.Erranda.MainActivity"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            />
+
+        <service android:name="com.example.Erranda.MyFirebaseInstanceToken">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
